@@ -347,23 +347,28 @@ void Program::start()
 				tempVector.y = -500;
                 window.moveEntity("PressKeyTxt", tempVector);
             }
-			
-			//todo
-			//takes in a string one key at a time
+
+			//takes in a string one key at a time for the highscore table
             if (typing == true)
             {
                 ticker.increment();
+				
             }
             if (typing == true && ticker.atAmount(5) && keyboard != "")
             {
-                if (keyboard == "Backspace")
+                if (keyboardSingle.find("Backspace") != std::string::npos)
                 {
 					if (tempStr.length() != 0)
                     {
-                        //tempStr = tempStr.Remove(tempStr.Length - 1);
+						std::string newString = "";
+						for(int i=0; i < tempStr.size()-1 ; i++)
+						{
+							newString.push_back(tempStr[i]);
+						}
+                        tempStr = newString;
                     }
                 }
-                else if (keyboardSingle == "Return")
+				else if (keyboardSingle.find("Return") != std::string::npos)
                 {
                     typing = false;
                     game.updateHighScoreTable(tempStr, game.getScore());
@@ -375,6 +380,19 @@ void Program::start()
                     window.setText("ScoreTxt3", game.getHighScoreName(2) + "\t\t" + Convert::intToString(game.getHighScore(2)));
                     window.setText("ScoreTxt4", game.getHighScoreName(3) + "\t\t" + Convert::intToString(game.getHighScore(3)));
                 }
+				else if (keyboard == "A" || keyboard == "B" || keyboard == "C" ||
+                        keyboard == "D" || keyboard == "E" || keyboard == "F" ||
+                        keyboard == "G" || keyboard == "H" || keyboard == "I" ||
+                        keyboard == "J" || keyboard == "K" || keyboard == "L" ||
+                        keyboard == "M" || keyboard == "N" || keyboard == "O" ||
+                        keyboard == "P" || keyboard == "Q" || keyboard == "R" ||
+                        keyboard == "S" || keyboard == "T" || keyboard == "U" ||
+                        keyboard == "V" || keyboard == "W" || keyboard == "X" ||
+                        keyboard == "Y" || keyboard == "Z")
+                {
+					std::locale loc;
+					tempStr.push_back(std::tolower(keyboard[0], loc));
+                }
                 else if (keyboard == "ALshift" || keyboard == "BLshift" || keyboard == "CLshift" ||
                         keyboard == "DLshift" || keyboard == "ELshift" || keyboard == "FLshift" ||
                         keyboard == "GLshift" || keyboard == "HLshift" || keyboard == "ILshift" ||
@@ -383,11 +401,8 @@ void Program::start()
                         keyboard == "PLshift" || keyboard == "QLshift" || keyboard == "RLshift" ||
                         keyboard == "SLshift" || keyboard == "TLshift" || keyboard == "ULshift" ||
                         keyboard == "VLshift" || keyboard == "WLshift" || keyboard == "XLshift" ||
-                        keyboard == "YLshift" || keyboard == "ZLshift")
-                {
-                    tempStr += keyboard[0];
-                }
-                else if (keyboard == "ARshift" || keyboard == "BRshift" || keyboard == "CRshift" ||
+                        keyboard == "YLshift" || keyboard == "ZLshift" ||
+						keyboard == "ARshift" || keyboard == "BRshift" || keyboard == "CRshift" ||
                         keyboard == "DRshift" || keyboard == "ERshift" || keyboard == "FRshift" ||
                         keyboard == "GRshift" || keyboard == "HRshift" || keyboard == "IRshift" ||
                         keyboard == "JRshift" || keyboard == "KRshift" || keyboard == "LRshift" ||
@@ -398,18 +413,6 @@ void Program::start()
                         keyboard == "YRshift" || keyboard == "ZRshift")
                 {
                     tempStr += keyboard[0];
-                }
-                else if (keyboard == "A" || keyboard == "B" || keyboard == "C" ||
-                        keyboard == "D" || keyboard == "E" || keyboard == "F" ||
-                        keyboard == "G" || keyboard == "H" || keyboard == "I" ||
-                        keyboard == "J" || keyboard == "K" || keyboard == "L" ||
-                        keyboard == "M" || keyboard == "N" || keyboard == "O" ||
-                        keyboard == "P" || keyboard == "Q" || keyboard == "R" ||
-                        keyboard == "S" || keyboard == "T" || keyboard == "U" ||
-                        keyboard == "V" || keyboard == "W" || keyboard == "X" ||
-                        keyboard == "Y" || keyboard == "Z")
-                {
-                    //tempStr += keyboard.ToLower();
                 }
                 ticker.resetCounter();
                 window.setText("NameTxt", tempStr);
@@ -594,6 +597,7 @@ void Program::start()
                         assetLoader("EnterHighScore");
 						tempStr.clear();
                         typing = true;
+						tempStr.clear();
                     }
                     else
                     {
@@ -610,18 +614,9 @@ void Program::start()
 				game.updatePositions();
 
 				//updates the hud
-				tempStr.clear();
-				tempStr.append("Score: ");
-				tempStr.append(Convert::intToString(game.getScore()));
-				window.setText("ScoreBoardTxt", tempStr);
-				tempStr.clear();
-				tempStr.append("Level: ");
-				tempStr.append(Convert::intToString(game.getLevel()));
-				window.setText("LevelTxt", tempStr);
-				tempStr.clear();
-				tempStr.append("Lives: ");
-				tempStr.append(Convert::intToString(game.getLives()));
-				window.setText("LivesTxt", tempStr);
+				window.setText("ScoreBoardTxt","Score: " + Convert::intToString(game.getScore()));
+				window.setText("LevelTxt", "Level: " + Convert::intToString(game.getLevel()));
+				window.setText("LivesTxt", "Lives: " + Convert::intToString(game.getLives()));
 
 				//play sounds
 				if (keyboardDown.find(game.getFireKey()) != std::string::npos)
