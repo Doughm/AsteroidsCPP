@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{0bcc8488-74ff-4850-b98e-c0519d4dbd39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\sound">
+      <UniqueIdentifier>{73f86ed5-8b62-472d-97a3-4fc0daa3f64a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\fonts">
+      <UniqueIdentifier>{4b849358-6cb9-40d3-81b0-51e572bc95c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\sprites">
+      <UniqueIdentifier>{889b3455-cbfe-4bd1-a5a7-c6616d78ed14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="audio.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="convert.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="gametimer.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="loadini.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="quad.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ticker.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="window.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="random.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="animation.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="audio.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="convert.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="gametimer.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="loadini.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="program.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="quad.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ticker.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="engine.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="fonts\arial.ttf">
+      <Filter>Resource Files\fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sound\BOOM2.WAV">
+      <Filter>Resource Files\sound</Filter>
+    </Media>
+    <Media Include="sound\POP1.WAV">
+      <Filter>Resource Files\sound</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="sprites\spritemap.png">
+      <Filter>Resource Files\sprites</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
