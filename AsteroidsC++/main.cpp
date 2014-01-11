@@ -4,7 +4,6 @@
 // - Known isues -
 //  all collision detection is bounding box, can look odd
 //  rarely a level doesn't end, not sure how to fix
-//  occasionally an explosion doesn't leave the screen, doesn't effect gameplay
 //
 //  Assets from:
 //  opengameart.org
@@ -510,6 +509,8 @@ void Program::start()
 							window.goToFrame("ExpositionAni" + Convert::intToString(game.getExplosionNumber()), 0);
 							game.destroyBullet(i - 1);
 							game.destroyUFO();
+							explosion = true;
+							window.resumeAnimation("ExpositionAni" + Convert::intToString(game.getExplosionNumber()));
 						}
 					}
 				}
