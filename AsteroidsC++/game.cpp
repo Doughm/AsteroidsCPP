@@ -190,7 +190,10 @@ void Game::reset(int newLevel)
     smallAsteroidsCounter = 0;
     lives = 2;
     level = newLevel;
-    score = 0;
+	if(newLevel = 0)
+	{
+		score = 0;
+	}
 	ship.position.x = 302;
 	ship.position.y = 228;
     ship.angle = 0;
