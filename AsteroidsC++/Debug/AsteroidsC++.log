@@ -1,18 +1,35 @@
-﻿Build started 8/6/2015 1:13:34 AM.
-     1>Project "C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\AsteroidsC++.vcxproj" on node 2 (Build target(s)).
+﻿Build started 8/2/2016 2:13:32 AM.
+     1>Project "C:\Users\Doug\Documents\GitHub\AsteroidsCPP\AsteroidsC++\AsteroidsC++.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\\SFML\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _USING_V110_SDK71_ /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt textedit.cpp window.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Doug\Documents\GitHub\AsteroidsCPP\AsteroidsC++\\SFML\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _USING_V110_SDK71_ /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt animation.cpp assetloader.cpp audio.cpp convert.cpp entity.cpp game.cpp gametimer.cpp loadini.cpp main.cpp quad.cpp random.cpp textedit.cpp ticker.cpp window.cpp
          window.cpp
-     1>c:\users\douglas harveymarose\documents\visual studio 2013\projects\asteroidscpp\asteroidsc++\window.cpp(1598): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\douglas harveymarose\documents\visual studio 2013\projects\asteroidscpp\asteroidsc++\window.cpp(1647): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\window.cpp(1598): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\window.cpp(1647): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         ticker.cpp
          textedit.cpp
-     1>c:\users\douglas harveymarose\documents\visual studio 2013\projects\asteroidscpp\asteroidsc++\textedit.cpp(77): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\douglas harveymarose\documents\visual studio 2013\projects\asteroidscpp\asteroidsc++\textedit.cpp(88): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\douglas harveymarose\documents\visual studio 2013\projects\asteroidscpp\asteroidsc++\textedit.cpp(106): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\douglas harveymarose\documents\visual studio 2013\projects\asteroidscpp\asteroidsc++\textedit.cpp(117): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\textedit.cpp(75): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\textedit.cpp(86): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\textedit.cpp(104): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\textedit.cpp(115): warning C4018: '<' : signed/unsigned mismatch
+         random.cpp
+         quad.cpp
+         main.cpp
+         loadini.cpp
+         gametimer.cpp
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\gametimer.cpp(12): warning C4244: 'return' : conversion from 'sf::Int64' to 'double', possible loss of data
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\gametimer.cpp(18): warning C4244: 'return' : conversion from 'sf::Int64' to 'double', possible loss of data
+         game.cpp
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\game.cpp(1312): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\game.cpp(1320): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         entity.cpp
+         convert.cpp
+         audio.cpp
+         assetloader.cpp
+         animation.cpp
+     1>c:\users\doug\documents\github\asteroidscpp\asteroidsc++\animation.cpp(26): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Debug\AsteroidsC++.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\\SFML\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Debug\AsteroidsC++.pdb" /SUBSYSTEM:CONSOLE,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Debug\AsteroidsC++.lib" /MACHINE:X86 Debug\animation.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Doug\Documents\GitHub\AsteroidsCPP\Debug\AsteroidsC++.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Doug\Documents\GitHub\AsteroidsCPP\AsteroidsC++\\SFML\lib "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Doug\Documents\GitHub\AsteroidsCPP\Debug\AsteroidsC++.pdb" /SUBSYSTEM:CONSOLE,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Doug\Documents\GitHub\AsteroidsCPP\Debug\AsteroidsC++.lib" /MACHINE:X86 Debug\animation.obj
          Debug\assetloader.obj
          Debug\audio.obj
          Debug\convert.obj
@@ -23,17 +40,16 @@
          Debug\main.obj
          Debug\quad.obj
          Debug\random.obj
-         Debug\tempdump.obj
          Debug\textedit.obj
          Debug\ticker.obj
          Debug\window.obj
-         AsteroidsC++.vcxproj -> C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Debug\AsteroidsC++.exe
+         AsteroidsC++.vcxproj -> C:\Users\Doug\Documents\GitHub\AsteroidsCPP\Debug\AsteroidsC++.exe
        PostBuildEvent:
-         xcopy /d /y "C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\SFML\bin" "C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Debug\"
+         xcopy /d /y "C:\Users\Doug\Documents\GitHub\AsteroidsCPP\AsteroidsC++\SFML\bin" "C:\Users\Doug\Documents\GitHub\AsteroidsCPP\Debug\"
          :VCEnd
          0 File(s) copied
-     1>Done Building Project "C:\Users\Douglas HarveyMarose\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\AsteroidsC++.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\Doug\Documents\GitHub\AsteroidsCPP\AsteroidsC++\AsteroidsC++.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.48
+Time Elapsed 00:00:06.33
