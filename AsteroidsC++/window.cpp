@@ -69,57 +69,57 @@ std::string Window::inputKeyboard()
 {
 	tempStr.clear();
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-		tempStr.append("A");
+		tempStr.append("LetrA");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::B))
-		tempStr.append("B");
+		tempStr.append("LetrB");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
-		tempStr.append("C");
+		tempStr.append("LetrC");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-		tempStr.append("D");
+		tempStr.append("LetrD");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::E))
-		tempStr.append("E");
+		tempStr.append("LetrE");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
-		tempStr.append("F");
+		tempStr.append("LetrF");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::G))
-		tempStr.append("G");
+		tempStr.append("LetrG");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::H))
-		tempStr.append("H");
+		tempStr.append("LetrH");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
-		tempStr.append("I");
+		tempStr.append("LetrI");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::J))
-		tempStr.append("J");
+		tempStr.append("LetrJ");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::K))
-		tempStr.append("K");
+		tempStr.append("LetrK");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::L))
-		tempStr.append("L");
+		tempStr.append("LetrL");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::M))
-		tempStr.append("M");
+		tempStr.append("LetrM");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::N))
-		tempStr.append("N");
+		tempStr.append("LetrN");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::O))
-		tempStr.append("O");
+		tempStr.append("LetrO");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
-		tempStr.append("P");
+		tempStr.append("LetrP");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
-		tempStr.append("Q");
+		tempStr.append("LetrQ");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
-		tempStr.append("R");
+		tempStr.append("LetrR");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-		tempStr.append("S");
+		tempStr.append("LetrS");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::T))
-		tempStr.append("T");
+		tempStr.append("LetrT");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::U))
-		tempStr.append("U");
+		tempStr.append("LetrU");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::V))
-		tempStr.append("V");
+		tempStr.append("LetrV");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-		tempStr.append("W");
+		tempStr.append("LetrW");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::X))
-		tempStr.append("X");
+		tempStr.append("LetrX");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Y))
-		tempStr.append("Y");
+		tempStr.append("LetrY");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
-		tempStr.append("Z");
+		tempStr.append("LetrZ");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num0))
 		tempStr.append("Num0");
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
@@ -275,57 +275,57 @@ std::string Window::inputKeyboard()
 std::string Window::inputKeyboardSingle()
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-		return "A";
+		return "LetrA";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::B))
-		return "B";
+		return "LetrB";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
-		return "C";
+		return "LetrC";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-		return "D";
+		return "LetrD";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::E))
-		return "E";
+		return "LetrE";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
-		return "F";
+		return "LetrF";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::G))
-		return "G";
+		return "LetrG";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::H))
-		return "H";
+		return "LetrH";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
-		return "I";
+		return "LetrI";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::J))
-		return "J";
+		return "LetrJ";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::K))
-		return "K";
+		return "LetrK";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::L))
-		return "L";
+		return "LetrL";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::M))
-		return "M";
+		return "LetrM";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::N))
-		return "N";
+		return "LetrN";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::O))
-		return "O";
+		return "LetrO";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
-		return "P";
+		return "LetrP";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
-		return "Q";
+		return "LetrQ";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
-		return "R";
+		return "LetrR";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-		return "S";
+		return "LetrS";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::T))
-		return "T";
+		return "LetrT";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::U))
-		return "U";
+		return "LetrU";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::V))
-		return "V";
+		return "LetrV";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-		return "W";
+		return "LetrW";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::X))
-		return "X";
+		return "LetrX";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Y))
-		return "Y";
+		return "LetrY";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
-		return "Z";
+		return "LetrZ";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num0))
 		return "Num0";
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))

@@ -3,15 +3,20 @@
 
 #include "loadini.h"
 #include <SFML/Graphics.hpp>
-#include <random>
 #include "entity.h"
 #include "gametimer.h"
 #include "random.h"
+#include "window.h"
+#include "audio.h"
+#include "assetloader.h"
+#include "ticker.h"
+#include "textedit.h"
 
 class Game
 {
 public:
-	Game();
+	Game(Window*, Audio*, AssetLoader*);
+	~Game();
 	void updateFromFile();
 	void updateToFile();
 	void updateHighScoreTable(std::string const&, int);
@@ -31,7 +36,7 @@ public:
 	void destroySmallAsteroid(int);
 	void destroyShip();
 	void destroyUFO();
-	void destroyExposition(int);
+	void destroyExplosion(int);
 	void wrapEntitys();
 	bool levelEnded();
 	void nextLevel();
@@ -42,52 +47,30 @@ public:
 	bool explosionInbounds(int);
 	
 	//sets and gets
-	sf::Vector2f getShipPosition();
-	float getShipAngle();
-	bool getShipIsVisible();
-	sf::Vector2f getExplosionPosition(int);
-	sf::Vector2f getLargeAsteroidsPosition(int);
-	bool getLargeAsteroidsIsVisible(int);
-	sf::Vector2f getMediumAsteroidsPosition(int);
-	bool getMediumAsteroidsIsVisible(int);
-	sf::Vector2f getSmallAsteroidsPosition(int);
-	bool getSmallAsteroidsIsVisible(int);
-	sf::Vector2f getUfoPosition();
-	float getBulletAngle(int);
-	sf::Vector2f getBulletPosition(int);
-	bool getBulletIsVisible(int);
-	bool getIsPaused();
-	int getLevel();
-	std::string getPauseKey();
-	std::string getFireKey();
-	std::string getLeftKey();
-	std::string getRightKey();
-	std::string getAccelerateKey();
-	std::string getHyperspaceKey();
-	bool getSoundOn();
-	std::string getHighScoreName(int);
-	int getHighScore(int);
-	int getScore();
-	int getLives();
-	int getExplosionNumber();
+
 	double getUpdateSpeed();
-	void setShipIsVisible(bool);
-	void setIsPaused(bool);
-	void setHighScoreName(int, std::string const&);
-	void setHighScore(int, int);
-	void setSoundOn(bool);
-	void setGameSpeed(int);
-	void setFireKey(std::string const&);
-	void setPauseKey(std::string const&);
-	void setLeftKey(std::string const&);
-	void setRightKey(std::string const&);
-	void setAccelerateKey(std::string const&);
-	void setHyperspaceKey(std::string const&);
+
+	void inputUpdate();
+	void menuUpdate();
+	void keyboardBind();
+	void inputString();
+	void pause();
+	void checkBulletCollisions();
+	void checkShipCollisions();
+	void checkEndOfGame();
+	void entityUpdate();
+	void changeLevel();
+	void graphicUpdate();
+	void explosionLastFrame();
+	bool escape();
+	bool isPlaying();
 
 private:
-	sf::Vector2f calculateVector(sf::Vector2f const&, float, int);
-
+	Window* window;
+	Audio* audio;
+	AssetLoader* assetLoader;
 	LoadINI loadINI;
+	TextEdit textEdit;
 	Random random;
 	GameTimer respawnTimer;
 	GameTimer gameTimer;
@@ -122,6 +105,34 @@ private:
     Entity smallAsteroids[48];
     Entity bullets[4];
     Entity ufo;
+	sf::Vector2f calculateVector(sf::Vector2f const&, float, int);
+	Ticker ticker;
+	bool isMenu;
+	std::string mouseClick;
+	std::string keyboard;
+	std::string keyboardDown;
+	std::string keyboardSingle;
+	std::string tempStr;
+	std::string setKey;
+	bool keyPress = false;
+	bool typing = false;
+
+	sf::Vector2f getShipPosition();
+	float getShipAngle();
+	bool getShipIsVisible();
+	sf::Vector2f getExplosionPosition(int);
+	sf::Vector2f getLargeAsteroidsPosition(int);
+	bool getLargeAsteroidsIsVisible(int);
+	sf::Vector2f getMediumAsteroidsPosition(int);
+	bool getMediumAsteroidsIsVisible(int);
+	sf::Vector2f getSmallAsteroidsPosition(int);
+	bool getSmallAsteroidsIsVisible(int);
+	sf::Vector2f getUfoPosition();
+	float getBulletAngle(int);
+	sf::Vector2f getBulletPosition(int);
+	bool getBulletIsVisible(int);
+	bool getIsPaused();
+	int getLevel();
 };
 
 #endif

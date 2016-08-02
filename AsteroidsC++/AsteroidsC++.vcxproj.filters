@@ -63,6 +63,12 @@
     <ClCompile Include="random.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="assetloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textedit.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animation.h">
@@ -78,9 +84,6 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="loadini.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="program.h">
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="quad.h">
@@ -99,6 +102,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="random.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="assetloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="textedit.h">
       <Filter>Engine</Filter>
     </ClInclude>
   </ItemGroup>
