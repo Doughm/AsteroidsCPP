@@ -13,4 +13,4 @@ Assets used in Asteroids are from:
 opengameart.org, 
 The Games Factory Pro
 
-Requires install of ether Visual Studio 2012 C++ redistributable, or a copy of Visual Studio 2012.
+Requires install of ether Visual Studio 2013 C++ redistributable, or a copy of Visual Studio 2013.
