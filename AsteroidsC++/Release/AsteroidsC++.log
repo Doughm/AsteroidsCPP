@@ -1,0 +1,45 @@
+﻿Build started 8/2/2016 12:59:54 AM.
+     1>Project "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\AsteroidsC++.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\AsteroidsC++.exe" /NOLOGO /LIBPATH:"C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\\SFML\lib" "sfml-audio.lib" "sfml-graphics.lib" "sfml-system.lib" "sfml-window.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\AsteroidsC++.pdb" /SUBSYSTEM:WINDOWS,"5.01" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\AsteroidsC++.lib" /MACHINE:X86 /SAFESEH Release\animation.obj
+         Release\assetloader.obj
+         Release\audio.obj
+         Release\convert.obj
+         Release\entity.obj
+         Release\game.obj
+         Release\gametimer.obj
+         Release\loadini.obj
+         Release\main.obj
+         Release\quad.obj
+         Release\random.obj
+         Release\textedit.obj
+         Release\ticker.obj
+         Release\window.obj
+         Generating code
+         Finished generating code
+         AsteroidsC++.vcxproj -> C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\AsteroidsC++.exe
+       PostBuildEvent:
+         xcopy /d /y "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\SFML\bin\openal32.dll" "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\"
+         xcopy /d /y "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\SFML\bin\libsndfile-1.dll" "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\"
+         xcopy /d /y "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\engine.ini" "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\"
+         mkdir "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\sound"
+         mkdir "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\fonts
+         mkdir "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\sprites"
+         xcopy /d /y "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\sound" "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\sound"
+         xcopy /d /y "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\fonts" "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\fonts"
+         xcopy /d /y "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\sprites" "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\sprites"
+         :VCEnd
+         0 File(s) copied
+         0 File(s) copied
+         0 File(s) copied
+         A subdirectory or file C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\sound already exists.
+         A subdirectory or file C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\fonts already exists.
+         A subdirectory or file C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\Release\sprites already exists.
+         0 File(s) copied
+         0 File(s) copied
+         0 File(s) copied
+     1>Done Building Project "C:\Users\Doug\Documents\Visual Studio 2013\Projects\AsteroidsCPP\AsteroidsC++\AsteroidsC++.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.18
